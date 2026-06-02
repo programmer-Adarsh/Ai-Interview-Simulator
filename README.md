@@ -1,16 +1,216 @@
-# React + Vite
+# AI Interview Simulator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An AI-powered interview preparation platform that simulates real technical interviews, evaluates candidate responses, and provides actionable feedback to help users improve their interview performance.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Overview
 
-## React Compiler
+Preparing for technical interviews often requires mentors, peers, or expensive platforms. This project aims to provide an accessible AI interviewer that can conduct mock interviews, generate role-specific questions, evaluate responses, and provide detailed performance feedback.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The platform supports multiple interview categories including:
 
-## Expanding the ESLint configuration
+* DSA Interviews
+* HR Interviews
+* CS Fundamentals
+* Technical Discussions
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Users can configure interview parameters such as role, difficulty level, and interview type before starting a multi-round interview session.
+
+---
+
+## Features
+
+### Multi-Round Interview Flow
+
+* Generate multiple interview questions in a single session
+* Track interview progress
+* Navigate through multiple rounds seamlessly
+
+### AI-Powered Question Generation
+
+* Generates role-specific interview questions
+* Supports different difficulty levels
+* Produces LeetCode-style coding questions for DSA interviews
+
+### AI Evaluation System
+
+Evaluates candidate responses on:
+
+* Correctness
+* Communication
+* Clarity
+* Problem-Solving Approach
+* Technical Understanding
+
+Provides:
+
+* Score
+* Strengths
+* Weaknesses
+* Improvement Suggestions
+
+### DSA Coding Mode
+
+For DSA interviews:
+
+* Language selection
+* Code-editor style interface
+* AI-based code review
+* Complexity analysis feedback
+
+### Results Dashboard
+
+Displays:
+
+* Overall Interview Score
+* Individual Question Scores
+* Strengths
+* Weaknesses
+* Suggestions
+* Interview History
+
+---
+
+## Tech Stack
+
+### Frontend
+
+* React
+* Vite
+* Tailwind CSS
+* Framer Motion
+* Axios
+* React Router
+
+### Backend
+
+* FastAPI
+* Python
+
+### AI
+
+* Google Gemini API
+
+### State Management
+
+* React Context API
+
+---
+
+## Project Structure
+
+frontend/
+
+├── src/
+
+│ ├── components/
+
+│ ├── pages/
+
+│ ├── services/
+
+│ ├── context/
+
+│ └── App.jsx
+
+│
+
+├── backend/
+
+│ ├── routes/
+
+│ ├── services/
+
+│ ├── prompts/
+
+│ └── main.py
+
+---
+
+## Application Flow
+
+User Selects Configuration
+
+↓
+
+AI Generates Questions
+
+↓
+
+Interview Session
+
+↓
+
+Answer Submission
+
+↓
+
+AI Evaluation
+
+↓
+
+Results Dashboard
+
+---
+
+## Key Technical Challenges
+
+### Prompt Engineering
+
+Designed structured prompts to:
+
+* Generate role-specific interview questions
+* Generate LeetCode-style DSA problems
+* Produce structured evaluation feedback
+* Return machine-readable JSON responses
+
+### State Management
+
+Managed interview state across:
+
+* Questions
+* Answers
+* Feedback
+* Interview Progress
+
+using React Context API.
+
+### AI Response Parsing
+
+Handled AI-generated JSON outputs and converted them into structured feedback for the frontend dashboard.
+
+---
+
+## Future Improvements
+
+* Company-Specific Interviews (Google, Amazon, Microsoft, Meta)
+* Adaptive Difficulty Adjustment
+* PDF Interview Reports
+* Voice-Based Interviews
+* Interview Analytics Dashboard
+* Collaborative Whiteboard
+* System Design Interview Mode
+* Authentication and Interview History Storage
+
+---
+
+## Screenshots
+
+Add screenshots of:
+
+* Landing Page
+* Interview Setup
+* Interview Session
+* Results Dashboard
+
+---
+
+## Author
+
+Adarsh
+
+B.Tech Student, IIT Roorkee
+
+Interested in Software Development, AI, and Full Stack Engineering.
+

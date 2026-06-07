@@ -195,16 +195,6 @@ Handled AI-generated JSON outputs and converted them into structured feedback fo
 
 ---
 
-## Screenshots
-
-Add screenshots of:
-
-* Landing Page
-* Interview Setup
-* Interview Session
-* Results Dashboard
-
----
 
 ## Author
 
